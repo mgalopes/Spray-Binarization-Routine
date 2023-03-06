@@ -8,7 +8,7 @@ import cv2
 import math
 import numpy as np
 
-path = 'Image.6tla7g5f.000018.tif'
+path = 'export_mateus/Image.6tla7g5f.000044.tif'
 img = cv2.imread(path)
 pointsList = []
 # convert the input image to grayscale
