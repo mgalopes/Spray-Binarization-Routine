@@ -42,7 +42,10 @@ for cnt in contours:
    cv2.drawContours(img, contours, -1, (0,255,0), 3)
    pointsList.append(contours) # Lista de pontos das regiões de contorno
    contourarea=cv2.contourArea(cnt)
-   print("Area em pixels",contourarea)
+   if contourarea > 1:
+      print("Area em pixels",contourarea)
+   else:
+      print('Area infinitesimal')
       
    #print("Countour",contours) >> Permite extrair os pontos das regiões de contorno
    
