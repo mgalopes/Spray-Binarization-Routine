@@ -8,13 +8,13 @@ import cv2
 import math
 import numpy as np
 
-path = 'export_mateus/Image.6tla7g5f.000044.tif'
+path = 'etanol_conv_25C_50bar.png'
 img = cv2.imread(path)
 pointsList = []
 # convert the input image to grayscale
 gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 # apply thresholding to convert grayscale to binary image
-ret,thresh = cv2.threshold(gray,3.85,255,cv2.THRESH_BINARY)
+ret,thresh = cv2.threshold(gray,30,255,cv2.THRESH_BINARY)
 median = np.median(img)
 lower = int(max(0, (1.0 - 0.33) * median))
 upper = int(min(255, (1.0 + 0.33) * median))
