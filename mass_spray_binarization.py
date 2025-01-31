@@ -15,14 +15,14 @@ import matplotlib.pyplot as plt
 from matplotlib.patches import Patch
 
 # ================= Configuration =================
-FOLDER_PATH = 'C:/Users/garci/Desktop/Test1/cropped_img/etanol_conv_25C'
+FOLDER_PATH = 'C:/Users/garci/Desktop/Test1/cropped_img/gasolina_div_25C'
 OUTPUT_FOLDER = 'C:/Users/garci/Desktop/Test1/output_images/binarized and contour'
 DPI = 600
 FONT_SIZE = 10
 GRID_SPACING = 50
 CROP_Y = 650
 CUSTOM_COLORS = ['red', 'blue', 'green']
-PLOT_TITLE = "Spray Pattern Analysis - Ethanol at 25°C"  # Add your title here
+PLOT_TITLE = "Spray Pattern Analysis - Gasoline at 25°C - Divergent Nozzle"  # Add your title here
 # ==================================================
 
 # Configure Matplotlib
